@@ -1,0 +1,40 @@
+version: '3'
+services:
+  rabbit:
+    build: ./rabbitmq
+    image: rabbitmq:3.8-management
+    hostname: rabbit
+    container_name: "wycs_rabbitmq3.8"
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=root
+      - RABBITMQ_DEFAULT_PASS=123123
+    volumes:
+      - ./data:/var/lib/rabbitmq
+  task:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tasks:1.0
+    restart: always
+    ports: # 指定端口映射
+      - "8080:8080"
+    environment:
+      - rabbitmq_host=rabbit
+      - rabbitmq_port=5672
+      - rabbitmq_username=root
+      - rabbitmq_password=123123
+      - mail_host=${mail_host}
+      - mail_username=${mail_username}
+      - mail_password=${mail_password}
+      - app_params=${app_params}
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+      replicas: 1
+      restart_policy:
+        condition: on-failure
