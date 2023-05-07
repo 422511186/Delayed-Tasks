@@ -8,9 +8,10 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
+
 /**
  * @author huangzhenyu
- * @date 2022/10/5
+ * @date 2023/5/7
  */
 @Component
 public class EmailUtils {

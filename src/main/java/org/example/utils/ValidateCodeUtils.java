@@ -2,11 +2,12 @@ package org.example.utils;
 
 import java.util.Random;
 
+
 /**
  * 随机生成验证码工具类
  *
  * @author huangzhenyu
- * @date 2022/10/5
+ * @date 2023/5/7
  */
 public class ValidateCodeUtils {
 

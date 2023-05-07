@@ -7,6 +7,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author huangzhenyu
+ * @date 2023/5/7
+ */
 @Configuration
 public class RabbitMQConfig {
 

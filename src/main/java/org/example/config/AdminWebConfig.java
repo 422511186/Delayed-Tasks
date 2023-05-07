@@ -10,6 +10,10 @@ import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
+/**
+ * @author huangzhenyu
+ * @date 2023/5/7
+ */
 @Slf4j
 @Configuration
 public class AdminWebConfig implements WebMvcConfigurer {

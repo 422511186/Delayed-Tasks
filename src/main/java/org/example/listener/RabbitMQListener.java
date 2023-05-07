@@ -14,6 +14,10 @@ import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.Date;
 
+/**
+ * @author huangzhenyu
+ * @date 2023/5/7
+ */
 @Slf4j
 @Component
 public class RabbitMQListener {

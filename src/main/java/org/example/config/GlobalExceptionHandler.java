@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
 
+
 /**
- * @Auther: hzy
- * @Date: 2022/4/28
- * @Description: 全局异常处理
- * 处理整个web controller的异常
+ * @author huangzhenyu
+ * @date 2023/5/7
  */
 @Slf4j
 @ResponseBody

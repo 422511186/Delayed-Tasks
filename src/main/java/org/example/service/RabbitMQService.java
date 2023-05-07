@@ -12,6 +12,10 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+/**
+ * @author huangzhenyu
+ * @date 2023/5/7
+ */
 @Slf4j
 @Service
 public class RabbitMQService {
