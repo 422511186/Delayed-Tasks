@@ -17,4 +17,4 @@ spring:
     password: ${mail_password}
 
 app:
-  params: ${app_params}
+  params: 1221
